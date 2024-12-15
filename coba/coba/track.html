@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lacak Pesanan</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    .tracking-container {
+      max-width: 500px;
+      margin: 2rem auto;
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 1.5rem;
+    }
+
+    .back-button {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      font-weight: bold;
+    }
+
+    .back-button i {
+      font-size: 1.2rem;
+      margin-right: 0.5rem;
+    }
+
+    /* Timeline Styles */
+    .timeline {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .timeline-item {
+      display: flex;
+      align-items: flex-start;
+      position: relative;
+    }
+
+    /* Garis Vertikal */
+    .timeline::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 12px;
+      width: 2px;
+      height: 100%;
+      background-color: #28a745;
+    }
+
+    /* Lingkaran Icon */
+    .timeline-icon {
+      width: 24px;
+      height: 24px;
+      border: 2px solid #28a745;
+      background-color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #28a745;
+      font-size: 0.9rem;
+      z-index: 2;
+    }
+
+    /* Icon Check */
+    .timeline-icon.check {
+      background-color: #28a745;
+      color: #ffffff;
+    }
+
+    .timeline-content {
+      margin-left: 1rem;
+    }
+
+    .timeline-content p {
+      margin: 0;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .timeline-content .subtext {
+      color: #d81515;
+      font-size: 12px;
+    }
+
+    /* Kembali ke Beranda */
+    .btn-beranda {
+      display: block;
+      margin: 2rem auto 0;
+      text-align: center;
+      background-color: #00274d;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="tracking-container">
+    <!-- Back Button -->
+    <div class="back-button">
+      <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+        <i class="bi bi-arrow-left"></i>
+        <span>Lacak</span>
+      </a>
+    </div>
+
+    <!-- Timeline -->
+    <div class="timeline">
+      <!-- Step 1 -->
+      <div class="timeline-item">
+        <div class="timeline-icon"></div>
+        <div class="timeline-content">
+          <p>Pesanan dibuat</p>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="timeline-item">
+        <div class="timeline-icon"></div>
+        <div class="timeline-content">
+          <p>Pesanan telah diserahkan kepada Jasa Kirim</p>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="timeline-item">
+        <div class="timeline-icon"></div>
+        <div class="timeline-content">
+          <p>Pesanan telah disortir</p>
+        </div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="timeline-item">
+        <div class="timeline-icon"></div>
+        <div class="timeline-content">
+          <p>Pesanan dalam proses pengantaran</p>
+        </div>
+      </div>
+
+      <!-- Step 5 -->
+      <div class="timeline-item">
+        <div class="timeline-icon"></div>
+        <div class="timeline-content">
+          <p>Pesanan nyangkut di DC Cakung</p>
+        </div>
+      </div>
+
+      <!-- Step 6 (Final Step) -->
+      <div class="timeline-item">
+        <div class="timeline-icon check">
+          <i class="bi bi-check-lg"></i>
+        </div>
+        <div class="timeline-content">
+          <p>Pesanan tiba di alamat tujuan</p>
+          <div class="subtext">dan diterima oleh yang bersangkutan</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Button Kembali ke Beranda -->
+    <a href="home.html" class="btn-beranda">Kembali ke Beranda</a>
+  </div>
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
